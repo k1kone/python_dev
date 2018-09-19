@@ -21,3 +21,9 @@ lst3 = [1, 2, 3],[4, 5, 6],[7, 8, 9]
 """ 行、列変換 """
 for (a, b, c) in zip(*lst3):
 		print(a, b, c)
+
+
+#文字列をfor文で表示すると、一文字づつ取り出されます。
+str = "Japan"
+for s in str:
+		print(s)
