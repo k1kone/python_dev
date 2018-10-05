@@ -1,4 +1,4 @@
-ls_str = ['America', 'France', 'Canada', 'arizona', 'Brazil', 'Japan']
+ls_str = ['America', 'France', 'Koria', 'Canada', 'arizona', 'Brazil', 'Japan']
 ls_int = [4, 7, 3, 23, 9, 54, 1, 8]
 
 print("ls_str's contents are")
@@ -69,6 +69,10 @@ print('ls_str.sort(key=str.lower) #すべて小文字としてソート : ')
 for i, con in enumerate(ls_str):
 	print('{}:{}'.format(i, con))
 
+print('''\n#pythonではint型とstr型の比較ができないため、
+次のようなstrとint型が混在したリストにsortをかけるとエラーが発生します。
+ls_int_str = ['a', 1, 3, 'b', 5, 'e']
+ls_int_str.sort()''')
 
 print('''\vーーー 配列の中身を削除 ーーー
 del list[index] ---''')
@@ -83,4 +87,4 @@ ls_str.remove('Koria')
 print('ls_str.remove("Koria") >')
 for i, con in enumerate(ls_str):
 	print('{}:{}'.format(i, con))
-
+print('#remove()関数では先頭から検索して初めに見つかったものを削除します')
