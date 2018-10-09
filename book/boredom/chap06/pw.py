@@ -6,9 +6,9 @@ import sys
 import pyperclip
 
 PASSWORD = {
-		'e-mail' : 'a;sldkfja;sdlfkjalk',
-		'blog' : 'rrrrr?_Teoaada354w45',
-		'web' : 'tosdfl;akjg' }
+		'e-mail' : 'aaaAAA',
+		'blog' : 'bbbBBB',
+		'web' : 'cccCCC' }
 
 if len(sys.argv) < 2:
 	print('''[ pw.py の使い方 ]
