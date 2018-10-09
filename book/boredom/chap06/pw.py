@@ -10,7 +10,7 @@ PASSWORD = {
 		'blog' : 'rrrrr?_Teoaada354w45',
 		'web' : 'tosdfl;akjg' }
 
-if len(sys.argv) > 2:
+if len(sys.argv) < 2:
 	print('''[ pw.py の使い方 ]
 第二引数にアカウントを入力すると、クリップボードに
 パスワードがコピーされます''')
