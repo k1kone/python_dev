@@ -2,14 +2,29 @@ import re
 
 f = open('capital.txt', 'r')
 fc = f.read()
+fcl = f.readlines()
+print('\n\v--------fc----------\n\v')
 print(fc)
-print('\n\v------------------\n\v')
+print('\n\v--------fcl----------\n\v')
+for i in fcl:
+	print(i)
 
-regx_c = re.compile(r'\S\w*')
+regx_c = re.compile(r'(\S*\w*)\s(\S*\w*)')
+#regx_c = re.compile(r'(\S\w*)\s(\S\w*)\s')
 capital = regx_c.findall(fc)
 #capital = fc.split('\n')
 f.close()
+print('\n\v--------capital----------\n\v')
 print(capital)
+#print('{},{}'.format(capital[0][0],capital[0][1]))
+
+
+
+
+
+
+
+""""
 print('\n\v------------------\n\v')
 
 cl = fc.replace('\t','').split('\n')
@@ -33,3 +48,4 @@ print('\n\v------------------\n\v')
 print(cl)
 print('\n\v------------------\n\v')
 print(ca)
+"""
