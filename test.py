@@ -1,16 +1,20 @@
-from test_class import testCl
-from datetime import date
+class A:
+	def __init__(self):
+		self.x = 10
+		self.y = 20
+		self.z = 30
 
-class clSub(testCl):
-	def __init__(self, name, math=0, jap=0, eng=0, birth=0):
-		self.__birth = birth
-		super().__init__(name, math, jap, eng)
+a = A()
 
-	def birthPrint(self):
-		print("birthday:{}".format(self.__birth))
+print(a.x, a.y, a.z, sep=' : ')
 
 
-ichiro = clSub('ichiro', 30, 40, 56, date(1988, 4, 30))
+class B(A):
+	def __init__(self):
+		self.h = 40
+		super().__init__()
+	def sss(self):
+		return self.x + self.y
 
-ichiro.info()
-ichiro.birthPrint()
+b = B()
+print(b.x, b.y, b.z, b.h, b.sss(), sep=' : ')
